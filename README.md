@@ -2,7 +2,7 @@
 
 A scalable, real-time chat application built with WebSockets, HAProxy, and Redis.
 
-> You can check the blog post from [**here**]()
+> You can check the blog post from [**here**](https://bnadel.hashnode.dev/building-a-scalable-real-time-chat-application-a-journey-through-websockets)
 
 ## Features
 
