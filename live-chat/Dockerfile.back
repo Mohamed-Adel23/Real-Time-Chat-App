@@ -1,0 +1,13 @@
+FROM node:20
+# My Docker working directory
+WORKDIR /live-chat/app
+# First Copying the json file
+COPY app/package.json /live-chat/app
+# Run this command after json copied to be sure that 
+# those two steps were cached as long as there is no 
+# changes in the json file
+RUN npm install
+# Then Copy all app files 
+COPY app /live-chat/app
+# Running Command
+CMD [ "npm", "run", "app" ]

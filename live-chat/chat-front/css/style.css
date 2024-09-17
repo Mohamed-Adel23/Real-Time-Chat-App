@@ -1,0 +1,79 @@
+body {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 800; */
+    font-style: normal;
+    background-image: url('../imgs/chat.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+
+.container {
+    margin: 50px 100px;
+    padding: 50px;
+}
+@media(max-width: 700px) {
+    .container {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+
+.gret {
+    margin: 100px 0;
+    text-align: center;
+}
+.gret h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f94d4d;
+}
+.sub {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.sub .inp {
+    width: 70%;
+    border-radius: 10px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+}
+.sub .btn {
+    width: 30%;
+    border-radius: 10px;
+    padding: 12px;
+    border: 2px solid #4CAF50;
+    background-color: #4CAF50;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.sub .btn:hover {
+    background-color: white;
+    color: #4CAF50;
+}
+.dis-err {
+    margin-top: 10px;
+}
+.err {
+    color: red;
+    font-size: small;
+}
+
+footer .foot {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.foot .para {
+    font-weight: bold;
+    font-size: small;
+}
+.para a {
+    color: #f94d4d;
+}

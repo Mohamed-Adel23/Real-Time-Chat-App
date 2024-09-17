@@ -1,0 +1,10 @@
+FROM nginx:alpine
+
+# Here The NGINX Look at the files
+WORKDIR /usr/share/nginx/html
+
+# Copy All Files
+COPY chat-front /usr/share/nginx/html
+
+# The Actual Container Port
+EXPOSE 80

@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  chat:
+    image: chatfront
+    ports:
+      - "1007:80"
+  prserv:
+    image: haproxy
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./haproxy:/usr/local/etc/haproxy
+  ws1:
+    image: wsapp
+    volumes:
+      - ./app/index.mjs:/live-chat/app/index.mjs:ro
+    environment:
+      - APPID=1000
+  ws2:
+    image: wsapp
+    volumes:
+      - ./app/index.mjs:/live-chat/app/index.mjs:ro
+    environment:
+      - APPID=2000
+  ws3:
+    image: wsapp
+    volumes:
+      - ./app/index.mjs:/live-chat/app/index.mjs:ro
+    environment:
+      - APPID=3000
+  ws4:
+    image: wsapp
+    volumes:
+      - ./app/index.mjs:/live-chat/app/index.mjs:ro
+    environment:
+      - APPID=4000
+  rds:
+    image: redis:3

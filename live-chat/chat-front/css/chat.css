@@ -1,0 +1,174 @@
+body {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 800; */
+    font-style: normal;
+    background-image: url('../imgs/chat2.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 20%;
+}
+
+.gret {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: rgb(135 54 251);
+}
+.gret .users {
+    color: green;
+    font-weight: bold;
+}
+
+.container {
+    padding: 50px 50px 10px 50px;
+    margin: 80px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+@media(max-width: 700px) {
+    .container {
+        padding: 20px;
+        margin: 50px 10px;
+    }    
+}
+
+.received {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+.msg {
+    max-width: 60%;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(0 141 146);
+    color: white;
+}
+.msg .client {
+    color: rgb(14, 235, 36);
+    font-weight: bold;
+}
+
+.send {
+    margin: 15px 0;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 15px;
+}
+.my-msg {
+    max-width: 60%;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(0, 144, 53);
+    color: white;
+}
+.my-msg .client {
+    color: rgb(0, 209, 191);
+    font-weight: bold;
+}
+
+.send-msg {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.send-msg .inp {
+    flex-basis: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.send-msg .send-btn {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container .con-toast {
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.container .con-toast.show {
+    opacity: 1;
+    transform: scale(1);
+} 
+.container .con-toast .connect {
+    display: inline;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #c8ffb7;
+    border-radius: 10px;
+    color: green;
+    font-size: medium;
+}
+.container .con-toast .leave {
+    display: inline;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #ffb2a6;
+    border-radius: 10px;
+    color: red;
+    font-size: medium;
+}
+
+.dis-err {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.err {
+    color: red;
+    font-size: small;
+}
+
+.leave {
+    display: flex;
+    justify-content: center;
+}
+.leave .leave-btn {
+    border: 2px solid red;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: red;
+    padding: 10px 25px;
+}
+.leave .leave-btn:hover {
+    background-color: white;
+    color: red;
+}
+
+footer .foot {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.foot .para {
+    font-weight: bold;
+    font-size: small;
+}
+.para a {
+    color: #f94d4d;
+}
