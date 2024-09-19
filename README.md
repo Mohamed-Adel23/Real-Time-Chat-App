@@ -28,7 +28,7 @@ A scalable, real-time chat application built with WebSockets, HAProxy, and Redis
 2. Build the Docker images:
    ```
    docker build -f Dockerfile.front -t chatfront .
-   docker build -f Dockerfile.back -t chatfront .
+   docker build -f Dockerfile.back -t wsapp .
    ```
 
 ## Running the Application
